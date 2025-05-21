@@ -1,11 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Syne+Mono&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Syne+Mono&display=swap");
 
 :root {
-  --primary-color: #BBE0EF;
-  --secondary-color: #06599F;
-  --overlay-color: #1A1314;
-  --gradient-color: #F2F3F4;
-  --text-color: #F0F0ED;
+  --primary-color: #bbe0ef;
+  --secondary-color: #06599f;
+  --overlay-color: #1a1314;
+  --gradient-color: #f2f3f4;
+  --text-color: #f0f0ed;
   --border-radius: 0.5rem;
 }
 
@@ -15,8 +15,11 @@
 
 body {
   background-color: var(--primary-color);
-  background-image: linear-gradient(315deg, var(--primary-color) 0%, var(--gradient-color) 100%)
-  ;
+  background-image: linear-gradient(
+    315deg,
+    var(--primary-color) 0%,
+    var(--gradient-color) 100%
+  );
   font-family: "Syne Mono", monospace;
   display: flex;
   flex-direction: column;
@@ -54,10 +57,13 @@ select {
   -moz-appearance: none;
   border-radius: var(--border-radius);
   background-color: var(--gradient-color);
+  margin-left: 10px;
+  margin-right: 10px;
 }
 
 select:focus,
-button:focus, input:focus {
+button:focus,
+input:focus {
   outline: 0;
 }
 
@@ -83,7 +89,7 @@ button:focus, input:focus {
 }
 
 .settings.hide {
-  transform: translateY(-100%)
+  transform: translateY(-100%);
 }
 
 .container {
@@ -127,7 +133,7 @@ input {
 .time-container {
   position: absolute;
   top: 60px;
- left: 20px;
+  left: 20px;
 }
 
 .end-game-container {
